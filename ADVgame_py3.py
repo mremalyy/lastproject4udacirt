@@ -30,7 +30,7 @@ def intro():
                 "You found two different ways")
 
 
-def choices():
+def reaction():
     response = input("Enter '1' to turn right \n"
                      "Enter '2' to turn left :")
     if "1" == response:
@@ -50,11 +50,11 @@ def play_again():
         print_pause("Wish you the best of luck")
     elif "yes" in response:
         print_pause("Very good, I'm ready to mess with you ")
-        choices()
+        reaction()
 
 
 def play_game():
     intro()
-    choices()
+    reaction()
     play_again()
 play_game()
